@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intel Water Positive Future</title>
+  <meta name="description" content="A student web design project highlighting Intel's water sustainability goals, responsive timeline, RTL adaptation, Bootstrap layout, and accessible form." />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content" data-i18n="skipLink">Skip to main content</a>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark site-nav" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand brand-word" href="#home" aria-label="Intel water sustainability homepage">intel<span>.</span></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="#home" data-i18n="navHome">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#timeline" data-i18n="navTimeline">Timeline</a></li>
+            <li class="nav-item"><a class="nav-link" href="#pillars" data-i18n="navPillars">Water Strategy</a></li>
+            <li class="nav-item"><a class="nav-link" href="#faq" data-i18n="navFaq">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#subscribe" data-i18n="navSubscribe">Subscribe</a></li>
+          </ul>
+
+          <div class="nav-tools d-flex align-items-center gap-2">
+            <label class="visually-hidden" for="languageSelect" data-i18n="languageLabel">Choose language</label>
+            <select id="languageSelect" class="form-select form-select-sm language-select" aria-label="Choose language">
+              <option value="en">English</option>
+              <option value="ar">العربية</option>
+            </select>
+            <a class="btn btn-outline-light btn-sm" href="#subscribe" data-i18n="contactBtn">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6 hero-copy">
+            <p class="eyebrow" data-i18n="heroEyebrow">Water stewardship + sustainable technology</p>
+            <h1 data-i18n="heroTitle">Intel’s Water Positive Journey</h1>
+            <p class="hero-subtitle" data-i18n="heroSubtitle">
+              Explore how technology, conservation, and watershed restoration can work together to support a more responsible future.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary btn-lg" href="#timeline" data-i18n="heroPrimary">Explore Timeline</a>
+              <a class="btn btn-outline-light btn-lg" href="#pillars" data-i18n="heroSecondary">View Strategy</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <img
+              class="hero-image"
+              src="images/hero-water-chip.jpg"
+              alt="A glowing water droplet with a microchip inside above blue water"
+              data-alt-en="A glowing water droplet with a microchip inside above blue water"
+              data-alt-ar="قطرة ماء مضيئة بداخلها شريحة إلكترونية فوق مياه زرقاء"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section id="timeline" class="timeline-section section-padding" aria-labelledby="timeline-title">
+      <div class="container">
+        <div class="section-heading text-center">
+          <p class="section-kicker" data-i18n="timelineKicker">Milestones</p>
+          <h2 id="timeline-title" data-i18n="timelineTitle">A Responsive Timeline of Water Stewardship</h2>
+          <p data-i18n="timelineIntro">
+            Scroll horizontally on large screens. On small screens, the cards stack vertically for easier reading.
+          </p>
+        </div>
+
+        <div class="timeline-track" aria-label="Intel water sustainability milestone timeline">
+          <article class="milestone-card" tabindex="0">
+            <img src="images/timeline-1968-lab.jpg" alt="Vintage semiconductor lab representing early innovation" data-alt-en="Vintage semiconductor lab representing early innovation" data-alt-ar="مختبر أشباه موصلات قديم يمثل بدايات الابتكار" />
+            <div class="milestone-body">
+              <span class="year">1968</span>
+              <h3 data-i18n="m1968Title">Innovation Roots</h3>
+              <p data-i18n="m1968Short">Intel’s story begins with a focus on invention, engineering, and the future of computing.</p>
+              <p class="milestone-extra" data-i18n="m1968Extra">This card connects Intel’s early technology history to today’s responsibility to design innovation with environmental awareness.</p>
+            </div>
+          </article>
+
+          <article class="milestone-card" tabindex="0">
+            <img src="images/timeline-2020-green-chip.jpg" alt="Microchip on a green leaf with water droplets" data-alt-en="Microchip on a green leaf with water droplets" data-alt-ar="شريحة إلكترونية فوق ورقة خضراء مع قطرات ماء" />
+            <div class="milestone-body">
+              <span class="year">2020</span>
+              <h3 data-i18n="m2020Title">2030 Vision</h3>
+              <p data-i18n="m2020Short">Intel announced long-term goals, including a commitment to achieve net positive water by 2030.</p>
+              <p class="milestone-extra" data-i18n="m2020Extra">The goal connects water conservation, restoration projects, and more efficient operations across communities and facilities.</p>
+            </div>
+          </article>
+
+          <article class="milestone-card featured" tabindex="0">
+            <img src="images/timeline-2024-water-plant.jpg" alt="Modern water recycling facility with blue pipes and tanks" data-alt-en="Modern water recycling facility with blue pipes and tanks" data-alt-ar="منشأة حديثة لإعادة تدوير المياه مع أنابيب وخزانات زرقاء" />
+            <div class="milestone-body">
+              <span class="year">2024</span>
+              <h3 data-i18n="m2024Title">Measurable Progress</h3>
+              <p data-i18n="m2024Short">Intel reported continued progress in water conservation and watershed restoration projects.</p>
+              <p class="milestone-extra" data-i18n="m2024Extra">In 2024, Intel reported conserving about 10.5 billion gallons of water and restoring 2.9 billion gallons through watershed projects.</p>
+            </div>
+          </article>
+
+          <article class="milestone-card" tabindex="0">
+            <img src="images/timeline-2026-river.jpg" alt="Restored mountain river and green watershed landscape" data-alt-en="Restored mountain river and green watershed landscape" data-alt-ar="نهر جبلي مستعاد ومنظر طبيعي أخضر لحوض مائي" />
+            <div class="milestone-body">
+              <span class="year">2026</span>
+              <h3 data-i18n="m2026Title">Community Restoration</h3>
+              <p data-i18n="m2026Short">Water restoration projects can support rivers, wetlands, agriculture, and local ecosystems.</p>
+              <p class="milestone-extra" data-i18n="m2026Extra">This milestone highlights the role of partnerships and local watershed work in creating long-term water resilience.</p>
+            </div>
+          </article>
+
+          <article class="milestone-card" tabindex="0">
+            <img src="images/timeline-2030-global-water.jpg" alt="Glowing water droplet in front of a digital world map" data-alt-en="Glowing water droplet in front of a digital world map" data-alt-ar="قطرة ماء مضيئة أمام خريطة عالم رقمية" />
+            <div class="milestone-body">
+              <span class="year">2030</span>
+              <h3 data-i18n="m2030Title">Net Positive Water Goal</h3>
+              <p data-i18n="m2030Short">By 2030, Intel aims to conserve 60 billion gallons of water and fund restoration projects.</p>
+              <p class="milestone-extra" data-i18n="m2030Extra">Net positive water means restoring and returning more freshwater than the company consumes in affected watersheds.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- THREE COLUMNS -->
+    <section id="pillars" class="pillars-section section-padding" aria-labelledby="pillars-title">
+      <div class="container">
+        <div class="section-heading text-center">
+          <p class="section-kicker" data-i18n="pillarsKicker">Strategy</p>
+          <h2 id="pillars-title" data-i18n="pillarsTitle">Three Ways Water Stewardship Comes to Life</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <article class="pillar-card h-100">
+              <i class="bi bi-droplet" aria-hidden="true"></i>
+              <h3 data-i18n="pillar1Title">Conserve</h3>
+              <p data-i18n="pillar1Text">Reduce freshwater demand through efficient operations, careful measurement, and smarter facility design.</p>
+              <a href="#faq" class="btn btn-outline-primary" data-i18n="learnMore">Learn More</a>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <article class="pillar-card h-100">
+              <i class="bi bi-arrow-repeat" aria-hidden="true"></i>
+              <h3 data-i18n="pillar2Title">Reuse</h3>
+              <p data-i18n="pillar2Text">Support water recycling and treatment systems that help manufacturing sites reduce environmental pressure.</p>
+              <a href="#faq" class="btn btn-outline-primary" data-i18n="learnMore">Learn More</a>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <article class="pillar-card h-100">
+              <i class="bi bi-tree" aria-hidden="true"></i>
+              <h3 data-i18n="pillar3Title">Restore</h3>
+              <p data-i18n="pillar3Text">Fund restoration projects that help return water to local watersheds and strengthen community resilience.</p>
+              <a href="#faq" class="btn btn-outline-primary" data-i18n="learnMore">Learn More</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOTSTRAP ACCORDION -->
+    <section id="faq" class="faq-section section-padding" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="section-heading text-center">
+              <p class="section-kicker" data-i18n="faqKicker">Interactive Component</p>
+              <h2 id="faq-title" data-i18n="faqTitle">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="accordion" id="waterAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-i18n="faq1Q">
+                    What does “net positive water” mean?
+                  </button>
+                </h3>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#waterAccordion">
+                  <div class="accordion-body" data-i18n="faq1A">
+                    It means returning or restoring more freshwater than is consumed, through conservation, reuse, and watershed restoration.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" data-i18n="faq2Q">
+                    Why does water matter in semiconductor manufacturing?
+                  </button>
+                </h3>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#waterAccordion">
+                  <div class="accordion-body" data-i18n="faq2A">
+                    Water is used in facility and manufacturing processes, so responsible water management helps reduce freshwater demand and environmental stress.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" data-i18n="faq3Q">
+                    How does this website support accessibility?
+                  </button>
+                </h3>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#waterAccordion">
+                  <div class="accordion-body" data-i18n="faq3A">
+                    It uses readable color contrast, descriptive image alt text, keyboard-accessible cards, form labels, semantic sections, and language-based RTL support.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUBSCRIBE -->
+    <section id="subscribe" class="subscribe-section section-padding" aria-labelledby="subscribe-title">
+      <div class="container">
+        <div class="subscribe-card">
+          <div>
+            <p class="section-kicker" data-i18n="subscribeKicker">Stay Updated</p>
+            <h2 id="subscribe-title" data-i18n="subscribeTitle">Get updates about sustainable technology</h2>
+            <p data-i18n="subscribeText">Subscribe for student project updates about water stewardship, responsible innovation, and accessible web design.</p>
+          </div>
+
+          <form id="subscribeForm" class="subscribe-form" aria-describedby="privacy-note form-status">
+            <div class="form-group">
+              <label for="name" data-i18n="nameLabel">Name</label>
+              <input id="name" name="name" type="text" class="form-control" autocomplete="name" data-i18n-placeholder="namePlaceholder" placeholder="Your name" />
+            </div>
+
+            <div class="form-group">
+              <label for="email" data-i18n="emailLabel">Email address</label>
+              <input id="email" name="email" type="email" class="form-control" autocomplete="email" required data-i18n-placeholder="emailPlaceholder" placeholder="you@example.com" />
+            </div>
+
+            <button class="btn btn-primary" type="submit" data-i18n="subscribeButton">Subscribe</button>
+            <p id="privacy-note" class="privacy-note" data-i18n="privacyNote">We respect your privacy. This demo form does not send your data anywhere.</p>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">intel<span>.</span></p>
+        <p class="footer-note" data-i18n="footerNote">Student project for educational web design practice. Not an official Intel website.</p>
+      </div>
+      <div class="footer-links" aria-label="Footer links">
+        <a href="https://www.intel.com/content/www/us/en/environment/intel-and-the-environment.html" target="_blank" rel="noopener" data-i18n="footerSustainability">Sustainability</a>
+        <a href="https://www.intel.com/content/www/us/en/corporate-responsibility/corporate-responsibility.html" target="_blank" rel="noopener" data-i18n="footerResponsibility">Corporate Responsibility</a>
+        <a href="#subscribe" data-i18n="footerContact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
